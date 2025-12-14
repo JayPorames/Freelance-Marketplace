@@ -1,0 +1,60 @@
+﻿src/common/decorators/roles.decorator.ts(2,10): error TS2305: Module '"@prisma/client"' has no exported member 'UserRole'.
+src/common/guards/roles.guard.ts(3,10): error TS2305: Module '"@prisma/client"' has no exported member 'UserRole'.
+src/main.ts(2,10): error TS2305: Module '"./modules/auth/auth.module"' has no exported member 'AppModule'.
+src/modules/auth/auth.module.ts(17,7): error TS2322: Type '(configService: ConfigService) => Promise<{ secret: string | undefined; signOptions: { expiresIn: string | undefined; }; }>' is not assignable to type '(...args: any[]) => JwtModuleOptions | Promise<JwtModuleOptions>'.
+  Type 'Promise<{ secret: string | undefined; signOptions: { expiresIn: string | undefined; }; }>' is not assignable to type 'JwtModuleOptions | Promise<JwtModuleOptions>'.
+    Type 'Promise<{ secret: string | undefined; signOptions: { expiresIn: string | undefined; }; }>' is not assignable to type 'Promise<JwtModuleOptions>'.
+      Type '{ secret: string | undefined; signOptions: { expiresIn: string | undefined; }; }' is not assignable to type 'JwtModuleOptions'.
+        The types of 'signOptions.expiresIn' are incompatible between these types.
+          Type 'string | undefined' is not assignable to type 'number | StringValue | undefined'.
+            Type 'string' is not assignable to type 'number | StringValue | undefined'.
+src/modules/auth/auth.service.ts(14,10): error TS2305: Module '"@prisma/client"' has no exported member 'UserRole'.
+src/modules/auth/auth.service.ts(27,44): error TS2339: Property 'user' does not exist on type 'PrismaService'.
+src/modules/auth/auth.service.ts(39,36): error TS2339: Property 'user' does not exist on type 'PrismaService'.
+src/modules/auth/auth.service.ts(51,25): error TS2339: Property 'freelancerProfile' does not exist on type 'PrismaService'.
+src/modules/auth/auth.service.ts(60,25): error TS2339: Property 'clientProfile' does not exist on type 'PrismaService'.
+src/modules/auth/auth.service.ts(87,36): error TS2339: Property 'user' does not exist on type 'PrismaService'.
+src/modules/auth/auth.service.ts(108,23): error TS2339: Property 'user' does not exist on type 'PrismaService'.
+src/modules/auth/auth.service.ts(133,43): error TS2339: Property 'refreshToken' does not exist on type 'PrismaService'.
+src/modules/auth/auth.service.ts(144,25): error TS2339: Property 'refreshToken' does not exist on type 'PrismaService'.
+src/modules/auth/auth.service.ts(151,23): error TS2339: Property 'refreshToken' does not exist on type 'PrismaService'.
+src/modules/auth/auth.service.ts(167,23): error TS2339: Property 'refreshToken' does not exist on type 'PrismaService'.
+src/modules/auth/auth.service.ts(183,23): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(payload: string, options?: Omit<JwtSignOptions, keyof SignOptions> | undefined): Promise<string>', gave the following error.
+    Argument of type '{ sub: string; email: string; role: UserRole; }' is not assignable to parameter of type 'string'.
+  Overload 2 of 3, '(payload: Buffer<ArrayBufferLike>, options?: JwtSignOptions | undefined): Promise<string>', gave the following error.
+    Argument of type '{ sub: string; email: string; role: UserRole; }' is not assignable to parameter of type 'Buffer<ArrayBufferLike>'.
+      Type '{ sub: string; email: string; role: UserRole; }' is missing the following properties from type 'Buffer<ArrayBufferLike>': slice, subarray, write, toJSON, and 102 more.
+  Overload 3 of 3, '(payload: { sub: string; email: string; role: UserRole; }, options?: JwtSignOptions | undefined): Promise<string>', gave the following error.
+    Type 'string | undefined' is not assignable to type 'number | StringValue | undefined'.
+      Type 'string' is not assignable to type 'number | StringValue | undefined'.
+src/modules/auth/auth.service.ts(188,23): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(payload: string, options?: Omit<JwtSignOptions, keyof SignOptions> | undefined): Promise<string>', gave the following error.
+    Argument of type '{ sub: string; email: string; role: UserRole; }' is not assignable to parameter of type 'string'.
+  Overload 2 of 3, '(payload: Buffer<ArrayBufferLike>, options?: JwtSignOptions | undefined): Promise<string>', gave the following error.
+    Argument of type '{ sub: string; email: string; role: UserRole; }' is not assignable to parameter of type 'Buffer<ArrayBufferLike>'.
+      Type '{ sub: string; email: string; role: UserRole; }' is missing the following properties from type 'Buffer<ArrayBufferLike>': slice, subarray, write, toJSON, and 102 more.
+  Overload 3 of 3, '(payload: { sub: string; email: string; role: UserRole; }, options?: JwtSignOptions | undefined): Promise<string>', gave the following error.
+    Type 'string | undefined' is not assignable to type 'number | StringValue | undefined'.
+      Type 'string' is not assignable to type 'number | StringValue | undefined'.
+src/modules/auth/auth.service.ts(198,23): error TS2339: Property 'refreshToken' does not exist on type 'PrismaService'.
+src/modules/auth/auth.service.ts(214,36): error TS2339: Property 'user' does not exist on type 'PrismaService'.
+src/modules/auth/dto/register.dto.ts(9,10): error TS2305: Module '"@prisma/client"' has no exported member 'UserRole'.
+src/modules/auth/strategies/jwt-refresh.strategy.ts(17,11): error TS2345: Argument of type '[{ jwtFromRequest: JwtFromRequestFunction<any>; ignoreExpiration: false; secretOrKey: string | undefined; passReqToCallback: true; }]' is not assignable to parameter of type '[opt: StrategyOptionsWithRequest] | [opt: StrategyOptionsWithoutRequest]'.
+  Type '{ jwtFromRequest: JwtFromRequestFunction<any>; ignoreExpiration: false; secretOrKey: string | undefined; passReqToCallback: true; }' is not assignable to type 'StrategyOptionsWithoutRequest'.
+    Types of property 'passReqToCallback' are incompatible.
+      Type 'true' is not assignable to type 'false'.
+src/modules/auth/strategies/jwt-refresh.strategy.ts(32,43): error TS2339: Property 'refreshToken' does not exist on type 'PrismaService'.
+src/modules/auth/strategies/jwt.strategy.ts(19,11): error TS2345: Argument of type '[{ jwtFromRequest: JwtFromRequestFunction<any>; ignoreExpiration: false; secretOrKey: string | undefined; }]' is not assignable to parameter of type '[opt: StrategyOptionsWithRequest] | [opt: StrategyOptionsWithoutRequest]'.
+  Type '[{ jwtFromRequest: JwtFromRequestFunction<any>; ignoreExpiration: false; secretOrKey: string | undefined; }]' is not assignable to type '[opt: StrategyOptionsWithoutRequest]'.
+    Type '{ jwtFromRequest: JwtFromRequestFunction<any>; ignoreExpiration: false; secretOrKey: string | undefined; }' is not assignable to type 'StrategyOptionsWithoutRequest'.
+      Type '{ jwtFromRequest: JwtFromRequestFunction<any>; ignoreExpiration: false; secretOrKey: string | undefined; }' is not assignable to type 'Omit<WithSecretOrKey, "secretOrKeyProvider"> & { passReqToCallback?: false | undefined; }'.
+        Type '{ jwtFromRequest: JwtFromRequestFunction<any>; ignoreExpiration: false; secretOrKey: string | undefined; }' is not assignable to type 'Omit<WithSecretOrKey, "secretOrKeyProvider">'.
+          Types of property 'secretOrKey' are incompatible.
+            Type 'string | undefined' is not assignable to type 'string | Buffer<ArrayBufferLike>'.
+              Type 'undefined' is not assignable to type 'string | Buffer<ArrayBufferLike>'.
+src/modules/auth/strategies/jwt.strategy.ts(27,36): error TS2339: Property 'user' does not exist on type 'PrismaService'.
+src/prisma/prisma.service.ts(2,10): error TS2305: Module '"@prisma/client"' has no exported member 'PrismaClient'.
+src/prisma/prisma.service.ts(7,16): error TS2339: Property '$connect' does not exist on type 'PrismaService'.
+src/prisma/prisma.service.ts(11,16): error TS2339: Property '$disconnect' does not exist on type 'PrismaService'.
+test/app.e2e-spec.ts(5,10): error TS2305: Module '"../src/modules/auth/auth.module"' has no exported member 'AppModule'.
